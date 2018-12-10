@@ -23,7 +23,7 @@ public class SimpleDListStack<T> implements StackAMS<T> {
 
     @Override
     public T pop() {
-        return list.removeFirst();
+        return list.getFirst();
     }
 
     @Override
