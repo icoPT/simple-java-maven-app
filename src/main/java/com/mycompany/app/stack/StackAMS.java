@@ -1,4 +1,4 @@
-package ams.stacktdd;
+package com.mycompany.app.stack;
 
 /**
  *

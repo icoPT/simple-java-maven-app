@@ -3,36 +3,42 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ams.stacktdd;
+package com.mycompany.app.stack;
+
+import java.util.LinkedList;
 
 /**
  *
  * @author ico
+ * @param <T> data element type
  */
-public class InclassStack<T> implements StackAMS<T>{
+public class SimpleDListStack<T> implements StackAMS<T> {
+
+    private final LinkedList<T> list = new LinkedList<>();
 
     @Override
     public void push(T item) {
+        list.addFirst(item);
     }
 
     @Override
     public T pop() {
-        return null;
+        return list.removeFirst();
     }
 
     @Override
     public T peek() {
-        return null;
+        return list.getFirst();
     }
 
     @Override
     public int size() {
-        return 0;
+        return list.size();
     }
 
     @Override
     public boolean isEmpty() {
-        return true;
+        return list.isEmpty();
     }
-    
+
 }
