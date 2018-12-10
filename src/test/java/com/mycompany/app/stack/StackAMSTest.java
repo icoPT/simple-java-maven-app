@@ -57,6 +57,7 @@ public class StackAMSTest {
 
     @org.junit.Test
     public void testSize() {
+        
     }
 
     @org.junit.Test
